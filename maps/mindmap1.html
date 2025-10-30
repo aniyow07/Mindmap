@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1000px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_0", "label": "Introduction", "shape": "box", "size": 20, "title": "Introduction"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_1", "label": "Context \u0026 Motivation", "shape": "box", "size": 25, "title": "Context \u0026 Motivation"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_2", "label": "Importance of brain health \u0026 MRI for diagnosis", "shape": "box", "size": 30, "title": "Importance of brain health \u0026 MRI for diagnosis"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_3", "label": "AI \u0026 big data for image processing classification", "shape": "box", "size": 30, "title": "AI \u0026 big data for image processing classification"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_4", "label": "Study Aim", "shape": "box", "size": 25, "title": "Study Aim"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_5", "label": "Classify brain tumors (glioma, meningioma, pituitary) from MR images", "shape": "box", "size": 30, "title": "Classify brain tumors (glioma, meningioma, pituitary) from MR images"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_6", "label": "Methods Overview", "shape": "box", "size": 25, "title": "Methods Overview"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_7", "label": "Convolutional Neural Network (CNN)", "shape": "box", "size": 30, "title": "Convolutional Neural Network (CNN)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_8", "label": "CNN-based Transfer Learning (Inception-V3, EfficientNetB4, VGG19)", "shape": "box", "size": 30, "title": "CNN-based Transfer Learning (Inception-V3, EfficientNetB4, VGG19)"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_9", "label": "Key Findings (Abstract Summary)", "shape": "box", "size": 25, "title": "Key Findings (Abstract Summary)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_10", "label": "Best accuracy: VGG16 (98%)", "shape": "box", "size": 30, "title": "Best accuracy: VGG16 (98%)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_11", "label": "Evaluation metrics: F-score, Recall, Precision, AUC", "shape": "box", "size": 30, "title": "Evaluation metrics: F-score, Recall, Precision, AUC"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_12", "label": "AI in Healthcare", "shape": "box", "size": 25, "title": "AI in Healthcare"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_13", "label": "Transformation \u0026 applications", "shape": "box", "size": 30, "title": "Transformation \u0026 applications"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_14", "label": "Early diagnosis \u0026 treatment of brain tumors", "shape": "box", "size": 30, "title": "Early diagnosis \u0026 treatment of brain tumors"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_15", "label": "Patient progress tracking", "shape": "box", "size": 30, "title": "Patient progress tracking"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_16", "label": "Study Contributions", "shape": "box", "size": 25, "title": "Study Contributions"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_17", "label": "Investigate highest performance transfer learning method", "shape": "box", "size": 30, "title": "Investigate highest performance transfer learning method"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_18", "label": "Investigate CNN performance (multi-layer, without transfer learning)", "shape": "box", "size": 30, "title": "Investigate CNN performance (multi-layer, without transfer learning)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_19", "label": "Investigate performance with skewed/poor quality dataset", "shape": "box", "size": 30, "title": "Investigate performance with skewed/poor quality dataset"}, {"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_20", "label": "Literature Review", "shape": "box", "size": 20, "title": "Literature Review"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_21", "label": "Previous Studies Overview", "shape": "box", "size": 25, "title": "Previous Studies Overview"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_22", "label": "SVM-based approaches (various accuracies)", "shape": "box", "size": 30, "title": "SVM-based approaches (various accuracies)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_23", "label": "CNN, LSTM, CNN-LSTM hybrids", "shape": "box", "size": 30, "title": "CNN, LSTM, CNN-LSTM hybrids"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_24", "label": "Transfer Learning (VGG16, ResNet-50, InceptionV3)", "shape": "box", "size": 30, "title": "Transfer Learning (VGG16, ResNet-50, InceptionV3)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_25", "label": "Capsule Networks", "shape": "box", "size": 30, "title": "Capsule Networks"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_26", "label": "Key Takeaway", "shape": "box", "size": 25, "title": "Key Takeaway"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_27", "label": "CNN and CNN-based transfer learning are effective for brain tumor detection", "shape": "box", "size": 30, "title": "CNN and CNN-based transfer learning are effective for brain tumor detection"}, {"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_28", "label": "Methodology", "shape": "box", "size": 20, "title": "Methodology"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_29", "label": "Data Source", "shape": "box", "size": 25, "title": "Data Source"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_30", "label": "Dataset: 2870 human brain MRI images", "shape": "box", "size": 30, "title": "Dataset: 2870 human brain MRI images"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_31", "label": "Categories: Glioma, Meningioma, No tumor, Pituitary", "shape": "box", "size": 30, "title": "Categories: Glioma, Meningioma, No tumor, Pituitary"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_32", "label": "Labeling: Physicians", "shape": "box", "size": 30, "title": "Labeling: Physicians"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_33", "label": "Image Size: 64x64", "shape": "box", "size": 30, "title": "Image Size: 64x64"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_34", "label": "Dataset Split: Training (75%), Testing (10%), Validation (15%)", "shape": "box", "size": 30, "title": "Dataset Split: Training (75%), Testing (10%), Validation (15%)"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_35", "label": "Deep Learning Concepts", "shape": "box", "size": 25, "title": "Deep Learning Concepts"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_36", "label": "Deep Learning: Subset of ML, learns patterns, extracts hierarchical features", "shape": "box", "size": 30, "title": "Deep Learning: Subset of ML, learns patterns, extracts hierarchical features"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_37", "label": "Convolutional Neural Network (CNN):\u003cbr\u003eFeature extraction, layers\u003cbr\u003e(convolutional, pooling, fully", "shape": "box", "size": 30, "title": "Convolutional Neural Network (CNN): Feature extraction, layers (convolutional, pooling, fully connected)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_38", "label": "Transfer Learning: Utilizes knowledge from pre-trained models", "shape": "box", "size": 30, "title": "Transfer Learning: Utilizes knowledge from pre-trained models"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_39", "label": "Models Used", "shape": "box", "size": 25, "title": "Models Used"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_40", "label": "VGG (VGG16, VGG19)", "shape": "box", "size": 30, "title": "VGG (VGG16, VGG19)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_41", "label": "EfficientNet (Scalable, efficient CNN family)", "shape": "box", "size": 30, "title": "EfficientNet (Scalable, efficient CNN family)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_42", "label": "Inception (Parallel convolution layers)", "shape": "box", "size": 30, "title": "Inception (Parallel convolution layers)"}, {"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_43", "label": "Experimental Setup \u0026 Results", "shape": "box", "size": 20, "title": "Experimental Setup \u0026 Results"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_44", "label": "Performance Metrics", "shape": "box", "size": 25, "title": "Performance Metrics"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_45", "label": "Accuracy, Precision, Recall, F-score", "shape": "box", "size": 30, "title": "Accuracy, Precision, Recall, F-score"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_46", "label": "Confusion Matrix", "shape": "box", "size": 30, "title": "Confusion Matrix"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_47", "label": "Receiver Operating Characteristic (ROC) Curve \u0026 AUC", "shape": "box", "size": 30, "title": "Receiver Operating Characteristic (ROC) Curve \u0026 AUC"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_48", "label": "Experimental Environment", "shape": "box", "size": 25, "title": "Experimental Environment"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_49", "label": "Google Colab", "shape": "box", "size": 30, "title": "Google Colab"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_50", "label": "Multi-layer CNN Implementation", "shape": "box", "size": 25, "title": "Multi-layer CNN Implementation"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_51", "label": "Architecture: Input (400x400, 3\u003cbr\u003echannels), Output (4 classes),\u003cbr\u003eConv/Pooling layers, Flatten, Dense,", "shape": "box", "size": 30, "title": "Architecture: Input (400x400, 3 channels), Output (4 classes), Conv/Pooling layers, Flatten, Dense, Softmax"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_52", "label": "Training: Rectified Adam optimizer,\u003cbr\u003eCategorical cross-entropy loss,\u003cbr\u003eReduceLROnPlateau", "shape": "box", "size": 30, "title": "Training: Rectified Adam optimizer, Categorical cross-entropy loss, ReduceLROnPlateau"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_53", "label": "CNN-based Transfer Learning Implementation", "shape": "box", "size": 25, "title": "CNN-based Transfer Learning Implementation"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_54", "label": "Modifications: Removed last 3 layers,\u003cbr\u003eadded GlobalAveragePooling2D, adjusted\u003cbr\u003edropout (0.05)", "shape": "box", "size": 30, "title": "Modifications: Removed last 3 layers, added GlobalAveragePooling2D, adjusted dropout (0.05)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_55", "label": "Training: Rectified Adam optimizer,\u003cbr\u003eCategorical cross-entropy loss, L2\u003cbr\u003eregularization, ReduceLROnPlateau", "shape": "box", "size": 30, "title": "Training: Rectified Adam optimizer, Categorical cross-entropy loss, L2 regularization, ReduceLROnPlateau"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_56", "label": "Key Results (from Table 3)", "shape": "box", "size": 25, "title": "Key Results (from Table 3)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_57", "label": "VGG16: 98% Accuracy (best)", "shape": "box", "size": 30, "title": "VGG16: 98% Accuracy (best)"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_58", "label": "EfficientNetB4: 97% Accuracy", "shape": "box", "size": 30, "title": "EfficientNetB4: 97% Accuracy"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_59", "label": "VGG19: 96% Accuracy", "shape": "box", "size": 30, "title": "VGG19: 96% Accuracy"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_60", "label": "InceptionV3: 96% Accuracy", "shape": "box", "size": 30, "title": "InceptionV3: 96% Accuracy"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_61", "label": "3 CNN Model: 91% Accuracy", "shape": "box", "size": 30, "title": "3 CNN Model: 91% Accuracy"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_62", "label": "AUC: 99% for VGG19, EfficientNetB4, InceptionV3, VGG16; 98% for 3 CNN Model", "shape": "box", "size": 30, "title": "AUC: 99% for VGG19, EfficientNetB4, InceptionV3, VGG16; 98% for 3 CNN Model"}, {"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_63", "label": "Discussion \u0026 Conclusion", "shape": "box", "size": 20, "title": "Discussion \u0026 Conclusion"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_64", "label": "Summary of Findings", "shape": "box", "size": 25, "title": "Summary of Findings"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_65", "label": "CNN-based transfer learning models performed better", "shape": "box", "size": 30, "title": "CNN-based transfer learning models performed better"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_66", "label": "VGG16 achieved highest accuracy", "shape": "box", "size": 30, "title": "VGG16 achieved highest accuracy"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_67", "label": "Implications for Healthcare", "shape": "box", "size": 25, "title": "Implications for Healthcare"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_68", "label": "AI for faster, more accurate diagnosis/treatment", "shape": "box", "size": 30, "title": "AI for faster, more accurate diagnosis/treatment"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_69", "label": "AI supports medical professionals", "shape": "box", "size": 30, "title": "AI supports medical professionals"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_70", "label": "Future: AI for early warning systems from CT/MR images", "shape": "box", "size": 30, "title": "Future: AI for early warning systems from CT/MR images"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_71", "label": "Recommendation", "shape": "box", "size": 25, "title": "Recommendation"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_72", "label": "Transfer learning preferred for image processing in healthcare", "shape": "box", "size": 30, "title": "Transfer learning preferred for image processing in healthcare"}, {"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_73", "label": "Limitations", "shape": "box", "size": 20, "title": "Limitations"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_74", "label": "Dataset used \"as is\"", "shape": "box", "size": 25, "title": "Dataset used \"as is\""}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_75", "label": "No rotation or cropping operations", "shape": "box", "size": 30, "title": "No rotation or cropping operations"}, {"color": "#d5e8d4", "font": {"color": "black"}, "id": "node_76", "label": "Data Availability", "shape": "box", "size": 20, "title": "Data Availability"}, {"color": "#f8cecc", "font": {"color": "black"}, "id": "node_77", "label": "Open Source Dataset", "shape": "box", "size": 25, "title": "Open Source Dataset"}, {"color": "#e1d5e7", "font": {"color": "black"}, "id": "node_78", "label": "Link provided", "shape": "box", "size": 30, "title": "Link provided"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "node_0", "to": "node_1"}, {"arrows": "to", "from": "node_1", "to": "node_2"}, {"arrows": "to", "from": "node_1", "to": "node_3"}, {"arrows": "to", "from": "node_0", "to": "node_4"}, {"arrows": "to", "from": "node_4", "to": "node_5"}, {"arrows": "to", "from": "node_0", "to": "node_6"}, {"arrows": "to", "from": "node_6", "to": "node_7"}, {"arrows": "to", "from": "node_6", "to": "node_8"}, {"arrows": "to", "from": "node_0", "to": "node_9"}, {"arrows": "to", "from": "node_9", "to": "node_10"}, {"arrows": "to", "from": "node_9", "to": "node_11"}, {"arrows": "to", "from": "node_0", "to": "node_12"}, {"arrows": "to", "from": "node_12", "to": "node_13"}, {"arrows": "to", "from": "node_12", "to": "node_14"}, {"arrows": "to", "from": "node_12", "to": "node_15"}, {"arrows": "to", "from": "node_0", "to": "node_16"}, {"arrows": "to", "from": "node_16", "to": "node_17"}, {"arrows": "to", "from": "node_16", "to": "node_18"}, {"arrows": "to", "from": "node_16", "to": "node_19"}, {"arrows": "to", "from": "node_20", "to": "node_21"}, {"arrows": "to", "from": "node_21", "to": "node_22"}, {"arrows": "to", "from": "node_21", "to": "node_23"}, {"arrows": "to", "from": "node_21", "to": "node_24"}, {"arrows": "to", "from": "node_21", "to": "node_25"}, {"arrows": "to", "from": "node_20", "to": "node_26"}, {"arrows": "to", "from": "node_26", "to": "node_27"}, {"arrows": "to", "from": "node_28", "to": "node_29"}, {"arrows": "to", "from": "node_29", "to": "node_30"}, {"arrows": "to", "from": "node_29", "to": "node_31"}, {"arrows": "to", "from": "node_29", "to": "node_32"}, {"arrows": "to", "from": "node_29", "to": "node_33"}, {"arrows": "to", "from": "node_29", "to": "node_34"}, {"arrows": "to", "from": "node_28", "to": "node_35"}, {"arrows": "to", "from": "node_35", "to": "node_36"}, {"arrows": "to", "from": "node_35", "to": "node_37"}, {"arrows": "to", "from": "node_35", "to": "node_38"}, {"arrows": "to", "from": "node_28", "to": "node_39"}, {"arrows": "to", "from": "node_39", "to": "node_40"}, {"arrows": "to", "from": "node_39", "to": "node_41"}, {"arrows": "to", "from": "node_39", "to": "node_42"}, {"arrows": "to", "from": "node_43", "to": "node_44"}, {"arrows": "to", "from": "node_44", "to": "node_45"}, {"arrows": "to", "from": "node_44", "to": "node_46"}, {"arrows": "to", "from": "node_44", "to": "node_47"}, {"arrows": "to", "from": "node_43", "to": "node_48"}, {"arrows": "to", "from": "node_48", "to": "node_49"}, {"arrows": "to", "from": "node_43", "to": "node_50"}, {"arrows": "to", "from": "node_50", "to": "node_51"}, {"arrows": "to", "from": "node_50", "to": "node_52"}, {"arrows": "to", "from": "node_43", "to": "node_53"}, {"arrows": "to", "from": "node_53", "to": "node_54"}, {"arrows": "to", "from": "node_53", "to": "node_55"}, {"arrows": "to", "from": "node_43", "to": "node_56"}, {"arrows": "to", "from": "node_56", "to": "node_57"}, {"arrows": "to", "from": "node_56", "to": "node_58"}, {"arrows": "to", "from": "node_56", "to": "node_59"}, {"arrows": "to", "from": "node_56", "to": "node_60"}, {"arrows": "to", "from": "node_56", "to": "node_61"}, {"arrows": "to", "from": "node_56", "to": "node_62"}, {"arrows": "to", "from": "node_63", "to": "node_64"}, {"arrows": "to", "from": "node_64", "to": "node_65"}, {"arrows": "to", "from": "node_64", "to": "node_66"}, {"arrows": "to", "from": "node_63", "to": "node_67"}, {"arrows": "to", "from": "node_67", "to": "node_68"}, {"arrows": "to", "from": "node_67", "to": "node_69"}, {"arrows": "to", "from": "node_67", "to": "node_70"}, {"arrows": "to", "from": "node_63", "to": "node_71"}, {"arrows": "to", "from": "node_71", "to": "node_72"}, {"arrows": "to", "from": "node_73", "to": "node_74"}, {"arrows": "to", "from": "node_74", "to": "node_75"}, {"arrows": "to", "from": "node_76", "to": "node_77"}, {"arrows": "to", "from": "node_77", "to": "node_78"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"layout": {"hierarchical": {"enabled": true, "levelSeparation": 150, "nodeSpacing": 100, "treeSpacing": 100, "blockShifting": true, "edgeMinimization": true, "parentCentralization": true, "direction": "UD", "sortMethod": "hubsize"}}, "nodes": {"shape": "box", "font": {"size": 14, "face": "Arial", "multi": true}, "margin": 10, "widthConstraint": {"maximum": 400}, "heightConstraint": {"minimum": 60}}, "edges": {"arrows": {"to": {"enabled": true}}, "smooth": {"type": "cubicBezier"}}, "interaction": {"hover": true, "tooltipDelay": 0}, "physics": {"enabled": false}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
