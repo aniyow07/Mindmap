@@ -60,7 +60,7 @@ python -m automap eval samples/*.pdf --llm         # needs GOOGLE_API_KEY in .en
 pytest                                             # 16 tests, offline (uses a TF-IDF embedder)
 ```
 
-The viewer in `web/` is static. Without the Python server it shows the bundled example maps, which is how the GitHub Pages demo works.
+The viewer in `web/` is static. Without the Python server it shows the bundled example maps, so it can be hosted as a static site.
 
 ## Layout
 
