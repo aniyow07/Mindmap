@@ -110,8 +110,9 @@
     root.each((n) => {
       if (n.children && n.depth >= (big ? 1 : 3)) collapse(n);
     });
-    document.getElementById("doc-title").textContent = data.title;
-    window.setLedText && window.setLedText(data.title);
+    const heading = document.getElementById("doc-title");
+    heading.textContent = data.title;
+    heading.title = data.title;
     const s = data.stats || {};
     stats.textContent = [
       s.pages && `${s.pages} pages`,
