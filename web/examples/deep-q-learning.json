@@ -1,0 +1,411 @@
+{
+ "title": "Deep Q-Learning Approaches for Developing Intelligent Game Playing Agents: A Comprehensive Review with Applications to Souls-like Games",
+ "root": {
+  "id": "n0",
+  "label": "Deep Q-Learning Approaches for Developing Intelligent Game Playing Agents: A Comprehensive Review with Applications to Souls-like Games",
+  "kind": "document",
+  "summary": "Deep Q-Learning and its variants offer powerful techniques for developing intelligent game-playing agents in Souls-like games.",
+  "children": [
+   {
+    "id": "n1",
+    "label": "Abstract",
+    "kind": "section",
+    "summary": "This comprehensive review explores the application of Deep Q-Learning (DQN) and its variants in developing intelligent game-playing agents, with specific emphasis on their potential application in challenging Souls-like games.",
+    "keywords": [
+     "Souls-like games",
+     "Deep Reinforcement",
+     "game-playing agents",
+     "Deep Q-Learning",
+     "human-like behavior"
+    ],
+    "passages": [
+     0,
+     1
+    ]
+   },
+   {
+    "id": "n2",
+    "label": "Introduction",
+    "kind": "section",
+    "title": "1. Introduction",
+    "summary": "The application of Deep Q-Learning techniques to such games remains an active area of research with significant practical implications for game development.",
+    "keywords": [
+     "gameplay experiences",
+     "Deep Q-Learning",
+     "agents",
+     "human-like behavior",
+     "development"
+    ],
+    "passages": [
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "id": "n3",
+    "label": "Summary of Key Research Papers",
+    "kind": "section",
+    "title": "2. Summary of Key Research Papers",
+    "summary": "(2022) [7] propose an efficient Deep Q-Learning strategy for sequential decision-making in game-playing, addressing the challenge of balancing exploration and exploitation.",
+    "keywords": [
+     "Souls-like games",
+     "Q-Learning",
+     "Multi-Agent",
+     "NPCs",
+     "Deep"
+    ],
+    "children": [
+     {
+      "id": "n4",
+      "label": "Q-learning",
+      "kind": "topic",
+      "summary": "Deep Q-Learning Applications in Games Wang and Kaneko (2018) [6] demonstrate the application of DRL in Werewolf game agents, focusing on decision-making under imperfect information.",
+      "keywords": [
+       "Q-Learning",
+       "Souls-like games",
+       "Multi-Agent",
+       "NPCs",
+       "Deep"
+      ],
+      "passages": [
+       5,
+       6,
+       7,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "n5",
+      "label": "Deep RL",
+      "kind": "topic",
+      "summary": "The paper presents four case studies spanning from simple planning algorithms (A* search) to state-of-the-art deep RL.",
+      "keywords": [
+       "deep RL",
+       "simple planning",
+       "tuning souls-like",
+       "training",
+       "seamlessly transfer"
+      ],
+      "passages": [
+       10
+      ]
+     },
+     {
+      "id": "n6",
+      "label": "Game AI",
+      "kind": "topic",
+      "summary": "(2017) [5] address the critical challenge of creating game AI agents that behave like humans rather than simply maximizing performance.",
+      "keywords": [
+       "Game AI",
+       "Human-like Behavior",
+       "learning separated",
+       "agents",
+       "Development"
+      ],
+      "passages": [
+       8,
+       9
+      ]
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "label": "Deep Q-Learning: Theoretical Foundations",
+    "kind": "section",
+    "title": "3. Deep Q-Learning: Theoretical Foundations",
+    "summary": "Advanced DQN Variants Several improvements to basic DQN have been proposed: • Double DQN: Addresses overestimation bias by decoupling action selection from action evaluation [8].",
+    "keywords": [
+     "Deep Q-Networks",
+     "Experience Replay",
+     "DQN",
+     "Learning",
+     "Q-value"
+    ],
+    "passages": [
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "id": "n8",
+    "label": "Application to Souls-like Games",
+    "kind": "section",
+    "title": "4. Application to Souls-like Games",
+    "summary": "• Strategic Behavior: Incentives for maintaining appropriate distance, managing stamina • Style Objectives: Rewards for varied attack patterns and human-like behavior [5] • Fairness Constraints: Penalties for exploiting game mechanics or unfair tactics • Adaptive Difficulty: Dynamic reward scaling based…",
+    "keywords": [
+     "Souls-like NPCs",
+     "Strategic",
+     "Stamina",
+     "actions",
+     "exploiting game"
+    ],
+    "passages": [
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "id": "n9",
+    "label": "Multi-Agent Coordination for Boss Encounters",
+    "kind": "section",
+    "title": "5. Multi-Agent Coordination for Boss Encounters",
+    "summary": "Cooperative NPC Behaviors For Souls-like games featuring multiple enemies or multi-phase boss encounters, MARL techniques from [3] and [4] enable sophisticated coordination: • Credit Assignment: Determining individual NPC contributions to team success [4] • Role Specialization: Agents learning complementary behaviors…",
+    "keywords": [
+     "coordination",
+     "multi-phase",
+     "boss encounters",
+     "NPC",
+     "strategy"
+    ],
+    "passages": [
+     21,
+     22
+    ]
+   },
+   {
+    "id": "n10",
+    "label": "Practical Implementation Considerations",
+    "kind": "section",
+    "title": "6. Practical Implementation Considerations",
+    "summary": "For practical Souls-like game development: • Start with simpler algorithms (DQN, Double DQN) before complex variants • Use expert demonstrations to accelerate initial training [5]",
+    "keywords": [
+     "State Abstraction",
+     "gameplay",
+     "Hyperparameter Tuning",
+     "features",
+     "Training"
+    ],
+    "passages": [
+     23,
+     24,
+     25
+    ]
+   },
+   {
+    "id": "n11",
+    "label": "Evaluation Metrics for Souls-like Game NPCs",
+    "kind": "section",
+    "title": "7. Evaluation Metrics for Souls-like Game NPCs",
+    "summary": "Style Metrics Following [5] and [2]: • Turing Test: Human evaluators distinguishing NPC from human players • Movement Patterns: Smoothness and naturalness of trajectories • Reaction Times: Appropriate delays avoiding superhuman reflexes • Behavioral Variety: Avoiding repetitive or exploitable patterns…",
+    "keywords": [
+     "Skill",
+     "Metrics",
+     "NPC",
+     "players",
+     "Performance"
+    ],
+    "passages": [
+     26,
+     27
+    ]
+   },
+   {
+    "id": "n12",
+    "label": "Future Research Directions",
+    "kind": "section",
+    "title": "8. Future Research Directions",
+    "summary": "Adaptive Difficulty Systems Developing NPCs that dynamically adjust challenge based on real-time player performance assessment, combining techniques from [2] and [5].",
+    "keywords": [
+     "NPCs",
+     "Meta-Learning",
+     "behaviors",
+     "decision-making",
+     "Hierarchical"
+    ],
+    "passages": [
+     28,
+     29
+    ]
+   },
+   {
+    "id": "n13",
+    "label": "Conclusion",
+    "kind": "section",
+    "title": "9. Conclusion",
+    "summary": "Deep Q-Learning and its variants offer powerful techniques for developing intelligent game-playing agents in Souls-like games.",
+    "keywords": [
+     "Souls-like games",
+     "Learning",
+     "NPCs",
+     "agents",
+     "players"
+    ],
+    "passages": [
+     30,
+     31
+    ]
+   }
+  ]
+ },
+ "passages": [
+  {
+   "text": "This comprehensive review explores the application of Deep Q-Learning (DQN) and its variants in developing intelligent game-playing agents, with specific emphasis on their potential application in challenging Souls-like games. We examine state-of-the-art approaches including Deep Reinforcement Learning (DRL), Multi-Agent Reinforcement Learning (MARL), and hybrid techniques combining reinforcement learning with supervised learning. The review synthesizes key methodologies from recent research, analyzing their effectiveness in creating both high-skill competitive agents and human-like NPCs that balance skill and style. We discuss critical challenges including state representation, action space complexity, reward shaping, and the trade-off between achieving superhuman performance versus maintaining human-like behavior.",
+   "page": 1
+  },
+  {
+   "text": "Special attention is given to the applicability of these techniques to Souls-like games, which present unique challenges due to their complex combat mechanics, strategic depth, and requirement for adaptive enemy behaviors. This work provides insights for game developers and AI researchers interested in creating sophisticated game-playing agents that enhance player experience. Keywords: Deep Q-Learning; Deep Reinforcement Learning; Multi-Agent Reinforcement Learning; Game AI; Non-Player Characters; Souls-like Games; Imitation Learning; Human-like Behavior",
+   "page": 1
+  },
+  {
+   "text": "The evolution of artificial intelligence in video games has progressed from simple rule-based systems to sophisticated learning agents capable of superhu- ∗corresponding author Email address: emaila@somaiya.edu (Vedant Shetty, Vivek Lakshman, Yashh Gokullgandhi, Vaishnavi Singh)",
+   "page": 1
+  },
+  {
+   "text": "man performance. Deep Q-Learning (DQN) and its variants have emerged as powerful techniques for training game-playing agents, demonstrating remarkable success in various gaming domains [1]. However, the application of these techniques extends beyond merely creating unbeatable opponents; modern game development requires agents that balance high performance with human-like behavior to enhance player engagement and immersion [2]. Souls-like games, characterized by challenging combat mechanics, strategic resource management, and adaptive enemy behaviors, present unique opportunities and challenges for AI agent development. These games require agents that can learn complex combat patterns, adapt to player strategies, and provide challenging yet fair gameplay experiences.",
+   "page": 2
+  },
+  {
+   "text": "The application of Deep Q-Learning techniques to such games remains an active area of research with significant practical implications for game development. This review synthesizes research from multiple domains including multiagent reinforcement learning [3, 4], human-like behavior modeling [5], game playtesting [2], and strategic decision-making in complex environments. We examine how these techniques can be applied to create intelligent NPCs for Souls-like games that provide engaging and adaptive gameplay experiences.",
+   "page": 2
+  },
+  {
+   "text": "2.1. Multi-Agent Reinforcement Learning in Video Games Li et al. (2025) [3] provide a comprehensive review of MARL applications in video games, examining how multiple agents interact and learn within gaming environments. The study systematically categorizes MARL algorithms and their applications across different game genres, highlighting the importance of credit assignment in multi-agent scenarios. This work is particularly relevant for Souls-like games that may feature cooperative or competitive multiplayer elements, where multiple NPCs must coordinate their actions to provide challenging encounters. Wang et al. (2025) [4] present a holistic perspective on connecting intelligent games with MARL from theoretical game concepts and practical applications.",
+   "page": 2
+  },
+  {
+   "text": "The research investigates information structure and environmental features crucial for MARL algorithms, addressing challenges in intelligent games including partial observability and delayed rewards. The paper emphasizes credit assignment mechanisms essential for training effective multi-agent systems, offering valuable insights for developing coordinated enemy behaviors in Souls-like games. 2.2. Deep Q-Learning Applications in Games Wang and Kaneko (2018) [6] demonstrate the application of DRL in Werewolf game agents, focusing on decision-making under imperfect information. The agents employ Deep Q Networks with improved state and action representations, achieving better performance than traditional Q-learning methods. The study shows that proper state representation—incorporating player 2",
+   "page": 2
+  },
+  {
+   "text": "declarations, attitudes, and factual information—significantly improves learning efficiency. This approach is relevant for Souls-like games where NPCs must make decisions based on partial information about player behavior and game state. Chang et al. (2022) [7] propose an efficient Deep Q-Learning strategy for sequential decision-making in game-playing, addressing the challenge of balancing exploration and exploitation. Their work demonstrates that careful design of the neural network architecture and reward mechanisms can significantly improve agent performance. The sequential decision-making framework is particularly applicable to Souls-like games where NPCs must plan sequences of attacks, dodges, and defensive maneuvers.",
+   "page": 3
+  },
+  {
+   "text": "2.3. Human-like Behavior in Game AI Miyashita et al. (2017) [5] address the critical challenge of creating game AI agents that behave like humans rather than simply maximizing performance. They propose three mixed models combining reinforcement learning and supervised learning: separated network model, synchronous learning, and independent learning. The separated network model demonstrated the best balance, achieving higher scores than human players while maintaining human-like behavior patterns. This research directly addresses the style-skill tradeoff crucial for creating engaging NPCs in Souls-like games. The study employs Turing tests to evaluate human-likeness, finding that agents trained purely on reinforcement learning exhibit unnatural behaviors such as unnaturally fast reaction times and robotic movement patterns.",
+   "page": 3
+  },
+  {
+   "text": "By incorporating supervised learning from human demonstrations, agents learned to move along smooth trajectories and exhibit appropriate reaction delays. For Souls-like games, this approach could create NPCs that challenge players without feeling unfair or artificial. 2.4. Playtesting and Game Development Enhancement Zhao et al. (2020) [2] present a comprehensive framework for using intelligent agents to enhance game development, distinguishing between agents designed to win and those designed to assist developers. The research emphasizes two fundamental metrics: skill (efficiency at completing tasks) and style (how agents engage with the game). The authors demonstrate that different game development tasks require different balances of these metrics.",
+   "page": 3
+  },
+  {
+   "text": "The paper presents four case studies spanning from simple planning algorithms (A* search) to state-of-the-art deep RL. A critical finding is that learning potential of deep RL models does not seamlessly transfer across domains without extensive hyperparameter tuning. For Souls-like games, this suggests that custom training approaches may be necessary rather than directly applying offthe-shelf solutions. The work also introduces state abstraction techniques that prioritize engineered features over raw pixel data, enabling faster training and better transferability across game builds—particularly valuable during iterative game development. 3",
+   "page": 3
+  },
+  {
+   "text": "2.5. Specialized Q-Learning Techniques Jang et al. (2019) [1] provide a comprehensive classification of Q-learning algorithms, distinguishing between single-agent and multi-agent approaches. The taxonomy covers value-based methods (including DQN and its variants), policy-based methods, and actor-critic architectures. This systematic classification helps identify appropriate algorithms for different game scenarios. Zhang et al. (2018) [8] demonstrate human-like autonomous vehicle speed control using Deep RL with Double Q-Learning, addressing the overestimation problem in standard Q-learning. The Double Q-Learning technique, which uses separate networks for action selection and evaluation, could improve NPC behavior stability in Souls-like games by reducing erratic decision-making caused by value overestimation.",
+   "page": 4
+  },
+  {
+   "text": "2.6. Advanced Q-Learning Variants Hu et al. (2024) [9] introduce Factorized Multi-Agent MiniMax Q-Learning (FM3Q) for two-team zero-sum Markov games. This approach is particularly relevant for Souls-like games featuring team-based encounters or boss fights with multiple phases. The factorization technique reduces computational complexity while maintaining strategic coordination among multiple NPCs. Saberi et al. (2024) [10] apply multi-agent deep constrained Q-learning to building energy management, demonstrating how constraints can be incorporated into the Q-learning framework. This constraint-handling mechanism could be adapted for Souls-like games to ensure NPCs follow game rules and maintain fair gameplay while still exhibiting intelligent behavior.",
+   "page": 4
+  },
+  {
+   "text": "3.1. Q-Learning Fundamentals Q-learning is a model-free reinforcement learning technique that learns the quality (Q-value) of state-action pairs. The Q-value represents the expected cumulative reward of taking action a in state s and following the optimal policy thereafter: Q(s, a) ←Q(s, a) + α[r + γ max a′ Q(s′, a′) −Q(s, a)] (1) where α is the learning rate, γ is the discount factor, r is the immediate reward, and s′ is the next state [1]. 3.2. Deep Q-Networks Deep Q-Networks extend traditional Q-learning by using deep neural networks to approximate Q-values, enabling agents to handle high-dimensional state spaces [6].",
+   "page": 4
+  },
+  {
+   "text": "DQN introduces two key innovations: 1. Experience Replay: Storing and randomly sampling past experiences breaks correlation between consecutive samples and improves learning stability [11]. 2. Target Network: Using a separate network for computing target Q- values reduces oscillations during training [8]. 4",
+   "page": 4
+  },
+  {
+   "text": "3.3. Advanced DQN Variants Several improvements to basic DQN have been proposed: • Double DQN: Addresses overestimation bias by decoupling action selection from action evaluation [8]. • Dueling DQN: Separates value and advantage functions to improve learning efficiency [12]. • Rainbow: Combines multiple improvements including prioritized experience replay, distributional RL, and noisy networks [2].",
+   "page": 5
+  },
+  {
+   "text": "4.1. Unique Challenges of Souls-like Games Souls-like games present several distinctive challenges for AI agent development: 1. Complex Combat Mechanics: Precise timing for attacks, blocks, parries, and dodges requiring frame-perfect execution 2. Strategic Resource Management: Stamina and health management that influences decision-making 3. Adaptive Difficulty: NPCs must provide appropriate challenge levels for players of varying skill 4. Fair Yet Challenging Gameplay: Agents must avoid exploiting game mechanics while remaining formidable opponents 5. Phase-based Boss Encounters: Complex multi-stage battles requiring different strategies 4.2. State Representation for Souls-like Games Drawing from [2] and [6], effective state representation for Souls-like NPCs should include:",
+   "page": 5
+  },
+  {
+   "text": "• Spatial Information: Relative positions and distances between player and NPC, obstacle locations • Character States: Health, stamina, equipment status, active buffs/debuffs • Action History: Recent player and NPC actions to capture temporal patterns • Combat Context: Current attack animations, invulnerability frames, combo states • Environmental Features: Terrain hazards, area boundaries, interactive elements As demonstrated by [2], engineered state features are preferable to raw pixel data for game development applications, offering faster training and better transferability across game builds. 5",
+   "page": 5
+  },
+  {
+   "text": "4.3. Action Space Design The action space for Souls-like NPCs must balance complexity with learnability: • Basic Actions: Light attack, heavy attack, dodge roll, block, parry • Directional Modifiers: Combining movement directions with actions • Special Abilities: Character-specific moves requiring strategic timing • Passive Actions: Defensive positioning, maintaining distance The approach from [7] of efficient sequential decision-making can help NPCs plan action sequences rather than selecting individual actions in isolation. 4.4. Reward Shaping for Balanced Gameplay Proper reward design is crucial for developing NPCs that are challenging but fair: • Combat Performance: Rewards for successful hits, blocks, and parries",
+   "page": 6
+  },
+  {
+   "text": "• Strategic Behavior: Incentives for maintaining appropriate distance, managing stamina • Style Objectives: Rewards for varied attack patterns and human-like behavior [5] • Fairness Constraints: Penalties for exploiting game mechanics or unfair tactics • Adaptive Difficulty: Dynamic reward scaling based on player performance 4.5. Hybrid Approach: Combining RL and Supervised Learning Following [5], a hybrid approach offers the best balance for Souls-like NPCs: 1. Expert Demonstrations: Collect gameplay data from skilled human players or designers 2. Supervised Pre-training: Train initial policy to imitate human behavior patterns 3. Reinforcement Fine-tuning: Improve performance while preserving human-like characteristics 4.",
+   "page": 6
+  },
+  {
+   "text": "Separated Networks: Maintain distinct networks for strategic decisions and stylistic elements This approach addresses the key finding from [5] that pure RL agents often exhibit unnatural behaviors, while pure imitation learning fails to achieve sufficient skill levels. 6",
+   "page": 6
+  },
+  {
+   "text": "5.1. Cooperative NPC Behaviors For Souls-like games featuring multiple enemies or multi-phase boss encounters, MARL techniques from [3] and [4] enable sophisticated coordination: • Credit Assignment: Determining individual NPC contributions to team success [4] • Role Specialization: Agents learning complementary behaviors (e.g., aggressive vs. defensive) • Tactical Positioning: Coordinated flanking and zoning strategies • Dynamic Adaptation: Adjusting team strategy based on player behavior 5.2. Factorized Q-Learning for Boss Fights The FM3Q approach from [9] can be adapted for complex boss encounters: • Each phase of the boss fight treated as a separate agent with shared objective",
+   "page": 7
+  },
+  {
+   "text": "• Factorization reduces computational complexity of multi-phase coordination • MiniMax formulation ensures strategic challenge against player • Enables smooth transitions between phases while maintaining coherent strategy",
+   "page": 7
+  },
+  {
+   "text": "6.1. State Abstraction and Feature Engineering Following recommendations from [2]: 1. Compact Representation: Use engineered features rather than raw pixels 2. Stability: Select features robust to cosmetic game changes 3. Accessibility: Include only information available to human players 4. Efficiency: Enable real-time inference during gameplay 5. Transferability: Design features that generalize across different game areas 7",
+   "page": 7
+  },
+  {
+   "text": "6.2. Training Pipeline Based on [2] framework: 1. Gameplay Environment: Game simulator with accelerated time 2. Agent Environment: Learning infrastructure separate from rendering 3. Interface Layer: OpenAI Gym-compatible interface for algorithm flexibility 4. Hyperparameter Tuning: Systematic exploration of learning parameters 5. Evaluation Metrics: Both skill-based and style-based assessment 6.3. Balancing Computational Cost [2] demonstrates that state-of-the-art RL models require extensive hyperparameter tuning for each game domain. For practical Souls-like game development: • Start with simpler algorithms (DQN, Double DQN) before complex variants • Use expert demonstrations to accelerate initial training [5]",
+   "page": 8
+  },
+  {
+   "text": "• Implement hierarchical approaches for complex behaviors • Leverage state abstraction to reduce training time • Consider rule-based fallback behaviors for edge cases",
+   "page": 8
+  },
+  {
+   "text": "7.1. Skill Metrics • Win Rate: Against players of various skill levels • Combat Efficiency: Damage dealt vs. damage taken • Strategic Depth: Variety of tactics employed • Adaptability: Performance against different player strategies 7.2. Style Metrics Following [5] and [2]: • Turing Test: Human evaluators distinguishing NPC from human players • Movement Patterns: Smoothness and naturalness of trajectories • Reaction Times: Appropriate delays avoiding superhuman reflexes • Behavioral Variety: Avoiding repetitive or exploitable patterns • Fairness Perception: Player reports of challenge without frustration 8",
+   "page": 8
+  },
+  {
+   "text": "7.3. Development Metrics From [2] playtesting perspective: • Training Time: Computational resources required • Sample Efficiency: Number of training episodes needed • Transferability: Performance across different game areas • Robustness: Stability to game updates and changes • Designer Iteration: Ease of adjusting NPC behaviors",
+   "page": 9
+  },
+  {
+   "text": "8.1. Adaptive Difficulty Systems Developing NPCs that dynamically adjust challenge based on real-time player performance assessment, combining techniques from [2] and [5]. 8.2. Hierarchical Reinforcement Learning Structuring complex Souls-like combat behaviors into hierarchical policies with high-level strategic decisions and low-level execution skills. 8.3. Meta-Learning for Rapid Adaptation Enabling NPCs to quickly adapt to individual player styles within a single playthrough, drawing from meta-learning approaches in [4]. 8.4. Explainable AI for Game Designers Creating interpretable agent behaviors allowing designers to understand and modify NPC decision-making processes, extending work from [2]. 8.5.",
+   "page": 9
+  },
+  {
+   "text": "Multi-Modal Learning Incorporating additional input modalities (audio cues, environmental context) to enhance NPC situational awareness and decision-making. 9",
+   "page": 9
+  },
+  {
+   "text": "Deep Q-Learning and its variants offer powerful techniques for developing intelligent game-playing agents in Souls-like games. This review has synthesized key approaches from recent research, emphasizing the critical balance between skill and style necessary for creating engaging NPCs. The hybrid approach combining reinforcement learning with supervised learning emerges as particularly promising, enabling agents that challenge players while maintaining human-like behavior patterns. For Souls-like games specifically, successful NPC development requires careful attention to state representation, action space design, reward shaping, and evaluation metrics that capture both performance and player experience. The findings from [2] regarding the importance of state abstraction and the challenges of transferring learning across domains highlight the need for gamespecific solutions rather than one-size-fits-all approaches.",
+   "page": 10
+  },
+  {
+   "text": "Future work should focus on adaptive difficulty systems, hierarchical learning approaches, and meta-learning techniques that enable NPCs to provide personalized challenges to individual players. As demonstrated across multiple studies, the goal is not to create unbeatable opponents but rather intelligent agents that enhance player engagement and satisfaction—the true measure of success in game AI development. The convergence of MARL techniques for coordinated behaviors, constrained Q-learning for fair gameplay, and imitation learning for human-like characteristics provides a comprehensive toolkit for creating sophisticated NPCs in challenging game environments. As computational resources continue to improve and training techniques become more efficient, the practical application of these methods to commercial Souls-like games becomes increasingly feasible.",
+   "page": 10
+  }
+ ],
+ "links": [
+  {
+   "source": "n1",
+   "target": "n4",
+   "score": 0.876,
+   "shared": [
+    "souls-like games",
+    "deep q-learning",
+    "deep"
+   ]
+  },
+  {
+   "source": "n4",
+   "target": "n13",
+   "score": 0.875,
+   "shared": [
+    "souls-like games",
+    "agents",
+    "souls-like"
+   ]
+  }
+ ],
+ "stats": {
+  "pages": 11,
+  "passages": 32,
+  "headings_detected": 11,
+  "running_lines_removed": 0,
+  "sections": 10,
+  "topics": 3,
+  "links": 2,
+  "mean_silhouette": 0.236,
+  "embedder": "all-MiniLM-L6-v2",
+  "seconds": 10.44
+ }
+}

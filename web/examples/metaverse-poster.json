@@ -1,0 +1,157 @@
+{
+ "title": "Name of Program: BTech AI&DS Architecting the Future: A Unified Framework for Industrial & Web 3.0 Metaverse",
+ "root": {
+  "id": "n0",
+  "label": "Name of Program: BTech AI&DS Architecting the Future: A Unified Framework for Industrial & Web 3.0 Metaverse",
+  "kind": "document",
+  "summary": "Our analysis highlights how technologies like Digital Twins, AI-driven orchestration, and modular blockchains can converge to create next-generation virtual ecosystems for industry and beyond.",
+  "children": [
+   {
+    "id": "n1",
+    "label": "Abstract",
+    "kind": "section",
+    "summary": "Our analysis highlights how technologies like Digital Twins, AI-driven orchestration, and modular blockchains can converge to create next-generation virtual ecosystems for industry and beyond.",
+    "keywords": [
+     "virtual environments",
+     "twins ai-driven",
+     "secure human-centric",
+     "revolutionize industries",
+     "research unified"
+    ],
+    "passages": [
+     0
+    ]
+   },
+   {
+    "id": "n2",
+    "label": "Results and Discussion",
+    "kind": "section",
+    "summary": "• Web 3.0: Powers a decentralized economy with user-owned identities and assets (NFTs/NFRs), and flexible, pay-as-you-go access via Metaverse-as-a-Service (MaaS).",
+    "keywords": [
+     "blockchain",
+     "idle computing",
+     "Non-Fungible Resources",
+     "MaaS",
+     "Smart Manufacturing"
+    ],
+    "passages": [
+     1
+    ],
+    "children": [
+     {
+      "id": "n3",
+      "label": "Literature Foundational Architecture (Rawat et al.): The",
+      "kind": "section",
+      "summary": "The \"IMverse\" model introduces Cyber-Verse, Physical-Verse, and Social-Verse, powered by an \"Industrial AI Brain.\" Web 3.0 & MaaS (Liu et al.): Introduces \"Metaverse-asa-Service (MaaS),\" where users subscribe to needed resources (computing, communication, data) rather than owning them.",
+      "passages": [
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "label": "Introduction",
+    "kind": "section",
+    "summary": "This poster consolidates insights from five papers to define a comprehensive blueprint for building robust, scalable, and secure Metaverse platforms, focusing on their application in smart manufacturing and Web 3.0.",
+    "keywords": [
+     "virtual space",
+     "ai xr",
+     "users interact",
+     "manufacturing",
+     "standardized holistic"
+    ],
+    "passages": [
+     4
+    ]
+   },
+   {
+    "id": "n5",
+    "label": "Methodology",
+    "kind": "section",
+    "summary": "• AI & Blockchain Orchestration Layer: Intelligent controllers (global/local AI) manage resource allocation and service instantiation.",
+    "keywords": [
+     "modular blockchain",
+     "Virtual",
+     "Digital Twins",
+     "Layers",
+     "resource allocation"
+    ],
+    "passages": [
+     5,
+     6
+    ]
+   },
+   {
+    "id": "n6",
+    "label": "Challenges and Limitations",
+    "kind": "section",
+    "title": "Challenges and Limitations:",
+    "summary": "Despite its promise, this vision faces significant hurdles: • Technical Complexity: Integrating heterogeneous systems (OT/IT, physical/digital) remains a major engineering challenge.",
+    "keywords": [
+     "Metaverse",
+     "interoperability",
+     "Latency",
+     "Privacy",
+     "digital"
+    ],
+    "passages": [
+     7,
+     8
+    ]
+   }
+  ]
+ },
+ "passages": [
+  {
+   "text": "The Metaverse is evolving from a concept into a foundational digital infrastructure, promising to revolutionize industries through immersive, decentralized, and intelligent virtual environments. This poster synthesizes key architectural paradigms from leading research to present a unified vision for building scalable, secure, and human-centric Metaverse systems. We integrate concepts from smart manufacturing, Web 3.0, and blockchain to propose a cohesive framework that addresses core challenges in resource management, interoperability, security, and user experience. Our analysis highlights how technologies like Digital Twins, AI-driven orchestration, and modular blockchains can converge to create next-generation virtual ecosystems for industry and beyond.",
+   "page": 1
+  },
+  {
+   "text": "This integrated framework unlocks key capabilities: • Smart Manufacturing: Enables hyper spatiotemporal collaboration, human-in-theloop interaction, and digital asset circulation—supporting remote training, immersive testing, and virtual maintenance. • Web 3.0: Powers a decentralized economy with user-owned identities and assets (NFTs/NFRs), and flexible, pay-as-you-go access via Metaverse-as-a-Service (MaaS). Technical Advantages: • Adaptability: AI and modular blockchain dynamically respond to user and network changes. • Resource Efficiency: Non-Fungible Resources (NFRs) harness idle computing power, cutting costs and environmental impact. • Security & Trust: Blockchain ensures tamper-proof transactions; AI strengthens threat detection. .",
+   "page": 1
+  },
+  {
+   "text": "Metaverse requires six core characteristics: Immersiveness, Spatio-temporal freedom, Sustainability, Interoperability, Scalability, and Heterogeneity. Key technological pillars include AI, Digital Twins, 5G/6G, and Blockchain. Smart Manufacturing (Bujari et al., Ren et al.): Proposes layered architectures integrating IIoT, Digital Twins, and AR/VR for real-time monitoring and humanin-the-loop control. The \"IMverse\" model introduces Cyber-Verse, Physical-Verse, and Social-Verse, powered by an \"Industrial AI Brain.\" Web 3.0 & MaaS (Liu et al.): Introduces \"Metaverse-asa-Service (MaaS),\" where users subscribe to needed resources (computing, communication, data) rather than owning them. The \"Slicing4Meta\" architecture uses AI-assisted controllers to intelligently orchestrate these multi-dimensional resources.",
+   "page": 1
+  },
+  {
+   "text": "Decentralization & Blockchain (Cheng et al.): Addresses the need for trust and resource sharing via a modular, adaptive blockchain. Introduces \"Non-Fungible Resources (NFR)\" to virtualize and trade idle computing power, lowering entry barriers for users.",
+   "page": 1
+  },
+  {
+   "text": "The Metaverse represents the next evolution of the Internet—a persistent, immersive, 3D virtual space where users interact with each other and digital assets. Driven by advancements in AI, XR, IoT, and blockchain, its potential spans healthcare, education, gaming, and critically, industrial manufacturing. However, the current landscape lacks a standardized, holistic architecture. This poster consolidates insights from five papers to define a comprehensive blueprint for building robust, scalable, and secure Metaverse platforms, focusing on their application in smart manufacturing and Web 3.0.",
+   "page": 1
+  },
+  {
+   "text": "Our approach synthesizes and integrates the core components from the reviewed architectures: 1. Define Core Layers: We establish a unified 5-layer stack: • Physical Layer: Real-world devices, sensors, and machinery (IIoT). • Virtual Layer: Digital Twins, Digital Assets, and Metadata Repositories for creating synchronized virtual representations. • Metaverse Engine Layer: Microservice-based platform for rendering, physics simulation, and streaming, acting as the bridge between virtual and application layers. • Application Layer: Human-in-the-loop interfaces (AR/VR headsets, haptics) and specific use-case applications (e.g., remote maintenance, collaborative design). • AI & Blockchain Orchestration Layer: Intelligent controllers (global/local AI) manage resource allocation and service instantiation.",
+   "page": 1
+  },
+  {
+   "text": "A modular blockchain provides security, identity, and a marketplace for NFRs. 2. Integrate Key Technologies: • Use Digital Twins for real-time synchronization and predictive analytics. • Employ AI/ML for dynamic resource allocation, scene generation (AIGC), and user interaction. • Leverage Modular Blockchain for adaptive consensus, secure transactions, and NFR trading. 3. Address Critical Challenges: Design for scalability, low-latency communication, data privacy, and seamless interoperability across different platforms and services.",
+   "page": 1
+  },
+  {
+   "text": "Despite its promise, this vision faces significant hurdles: • Technical Complexity: Integrating heterogeneous systems (OT/IT, physical/digital) remains a major engineering challenge. • Computing Power: Rendering massive, highfidelity 3D worlds in real-time requires immense, often unsustainable, computational resources. • Latency & Bandwidth: Achieving submillisecond latency for immersive experiences demands next-generation networks (6G, TSN). • Privacy & Security: Protecting vast amounts of biometric and behavioral data generated in the Metaverse is paramount. • Standardization: Lack of universal standards for interoperability and data exchange hinders widespread adoption. • Human Factors: Ensuring intuitive, natural, and non-fatiguing user interfaces is critical for long-term engagement.",
+   "page": 1
+  },
+  {
+   "text": "Conclusion: The future Metaverse will rely on a unified, intelligent integration of AI, Digital Twins, blockchain, and on-demand resource models. By merging smart manufacturing architectures with Web 3.0 principles—such as MaaS, NFRs, and adaptive blockchains—we can build scalable, secure, and human-centered virtual ecosystems. While challenges in latency, interoperability, and privacy remain, this integrated vision charts a clear path toward realizing the Metaverse’s full industrial and societal potential.",
+   "page": 1
+  }
+ ],
+ "links": [],
+ "stats": {
+  "pages": 1,
+  "passages": 9,
+  "headings_detected": 7,
+  "running_lines_removed": 0,
+  "sections": 6,
+  "topics": 0,
+  "links": 0,
+  "mean_silhouette": null,
+  "embedder": "all-MiniLM-L6-v2",
+  "seconds": 10.53
+ }
+}

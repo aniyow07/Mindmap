@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoMap</title>
+  <meta name="description" content="Turns a PDF into an interactive mind map using the document's own structure, embedding clusters and keyphrase labels.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <canvas id="led" class="led" aria-hidden="true"></canvas>
+      <h1 id="doc-title" class="visually-hidden">AutoMap</h1>
+    </div>
+    <div class="actions">
+      <label class="picker">
+        <span class="visually-hidden">Example document</span>
+        <select id="examples"></select>
+      </label>
+      <button id="upload-btn" class="btn" type="button">Map a PDF</button>
+      <input id="file" type="file" accept="application/pdf" hidden>
+      <button id="about-btn" class="btn ghost" type="button" aria-haspopup="dialog">How it works</button>
+    </div>
+  </header>
+
+  <p id="stats" class="stats" aria-live="polite"></p>
+
+  <main class="stage">
+    <section class="canvas" aria-label="Mind map">
+      <svg id="map" role="tree" aria-label="Mind map of the document"></svg>
+      <div class="legend" aria-hidden="true">
+        <span><i class="sw sw-sec"></i>Section from the document</span>
+        <span><i class="sw sw-top"></i>Topic found by clustering</span>
+        <span><i class="sw sw-lnk"></i>Related idea elsewhere</span>
+      </div>
+      <div class="zoom">
+        <button type="button" class="btn ghost icon" id="fit" title="Fit map to screen" aria-label="Fit map to screen">⤢</button>
+        <button type="button" class="btn ghost icon" id="expand" title="Expand everything" aria-label="Expand everything">＋</button>
+        <button type="button" class="btn ghost icon" id="collapse" title="Collapse to sections" aria-label="Collapse to sections">－</button>
+      </div>
+      <div id="busy" class="busy" hidden>Reading the PDF…</div>
+    </section>
+
+    <aside id="panel" class="panel" aria-live="polite">
+      <div class="panel-empty">
+        <p>Select a node to see the passages it came from.</p>
+        <p class="hint">Click a node to open it. Click its dot to fold or unfold its branch. Drag to pan, scroll to zoom.</p>
+      </div>
+    </aside>
+  </main>
+
+  <dialog id="about" class="about">
+    <form method="dialog"><button class="btn ghost close" aria-label="Close">✕</button></form>
+    <h2>How AutoMap builds a map</h2>
+    <ol class="steps">
+      <li><strong>Read the layout.</strong> PyMuPDF gives every text block with its font size, weight and position. Running headers and page numbers repeated in the margins are dropped, and heading styles are grouped into levels. If the PDF has trustworthy bookmarks, those win.</li>
+      <li><strong>Keep the author's structure.</strong> Headings become the skeleton of the map, so branches match how the document is actually organised. Front matter and references are left out.</li>
+      <li><strong>Find topics inside long sections.</strong> Passages are embedded with MiniLM and clustered (agglomerative, cosine), with the number of topics chosen by silhouette score.</li>
+      <li><strong>Name things.</strong> Class-based TF-IDF proposes phrases that set a cluster apart from its siblings. Those phrases are then re-ranked by embedding similarity with maximal marginal relevance, so the keywords don't repeat each other.</li>
+      <li><strong>Connect branches.</strong> Nodes in different branches whose content is unusually similar (1.5σ above the document's mean) get a red link.</li>
+    </ol>
+    <p>Every label is extracted from the document, so nothing is made up. The evaluation against the original LLM and clustering versions is in the <a id="repo-link" href="https://github.com/aniyow07/Mindmap#evaluation">README</a>.</p>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="led.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

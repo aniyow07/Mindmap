@@ -1,0 +1,692 @@
+{
+ "title": "ML IA - 2",
+ "root": {
+  "id": "n0",
+  "label": "ML IA - 2",
+  "kind": "document",
+  "summary": "reviewed computational clustering methods for single-cell RNA-seq analysis.",
+  "children": [
+   {
+    "id": "n1",
+    "label": "HGC",
+    "kind": "section",
+    "title": "1. “HGC: Fast Hierarchical Clustering for Large-Scale Single- Cell Data” (Bioinformatics, 2021)",
+    "summary": "present HGC, a Hierarchical Graph-based Clustering algorithm designed for large single-cell RNA-seq datasets.",
+    "keywords": [
+     "hgc hierarchical",
+     "shared nearest-neighbor",
+     "multi-resolution exploration",
+     "algorithm designed",
+     "speed scalability"
+    ],
+    "passages": [
+     0
+    ]
+   },
+   {
+    "id": "n2",
+    "label": "Significance Analysis for Clustering with Single-Cell RNA-…",
+    "kind": "section",
+    "title": "2. “Significance Analysis for Clustering with Single-Cell RNA- Sequencing Data” (Nature Methods, 2023)",
+    "summary": "introduced sc-SHC, a statistical framework integrating hypothesis testing into hierarchical clustering for scRNA-seq data.",
+    "keywords": [
+     "over-clustering identifies",
+     "testing hierarchical",
+     "mouse cerebellum",
+     "populations corrects",
+     "statistical framework"
+    ],
+    "passages": [
+     1
+    ]
+   },
+   {
+    "id": "n3",
+    "label": "Self-Supervised Deep Clustering of Single-Cell RNA-Seq Data…",
+    "kind": "section",
+    "title": "3. “Self-Supervised Deep Clustering of Single-Cell RNA-Seq Data to Hierarchically Detect Rare Cell Populations” (Briefings in Bioinformatics, 2023)",
+    "summary": "Benchmarking across large datasets, DeepScena outperformed seven popular tools and successfully detected subpopulations in multiple myeloma cells, improving resolution and reliability in cell-type discovery .",
+    "keywords": [
+     "self-supervised deep",
+     "tool scrna-seq",
+     "subpopulations multiple",
+     "DeepScena",
+     "populations benchmarking"
+    ],
+    "passages": [
+     2
+    ]
+   },
+   {
+    "id": "n4",
+    "label": "Dimensionality Reduction and Louvain Agglomerative Hierarchical Clustering…",
+    "kind": "section",
+    "title": "4. “Dimensionality Reduction and Louvain Agglomerative Hierarchical Clustering for Biomarker Discovery in Single-Cell Data” (Frontiers in Genetics, 2022)",
+    "summary": "proposed an integrated framework combining PCA-based dimensionality reduction and Louvain hierarchical clustering to analyze singlecell RNA sequencing (scRNA-seq) data.",
+    "keywords": [
+     "sequencing scrna-seq",
+     "biomarkers",
+     "Louvain hierarchical",
+     "rpl13a model",
+     "singlecell RNA"
+    ],
+    "passages": [
+     3
+    ]
+   },
+   {
+    "id": "n5",
+    "label": "Immune Cell Infiltration and Relevant Gene Signatures…",
+    "kind": "section",
+    "title": "5. “Immune Cell Infiltration and Relevant Gene Signatures in the Tumor Microenvironment of Breast Cancer” (Frontiers in Molecular Biosciences, 2022)",
+    "summary": "This study analyzed 1,077 breast cancer transcriptomes using ssGSEA and clustering to profile tumor microenvironment (TME) immune infiltration.",
+    "keywords": [
+     "transcriptomes ssgsea",
+     "breast cancer",
+     "tme immune",
+     "prognostic biomarker",
+     "score seven"
+    ],
+    "passages": [
+     4
+    ]
+   },
+   {
+    "id": "n6",
+    "label": "Consensus Clustering of Gene Expression Profiles in…",
+    "kind": "section",
+    "title": "6. “Consensus Clustering of Gene Expression Profiles in Peripheral Blood of Acute Ischemic Stroke Patients” (Frontiers in Neurology, 2022)",
+    "summary": "Weighted Gene Co-expression Network Analysis (WGCNA) revealed eight functional gene modules linked to stroke severity and hemorrhagic transformation risk, suggesting potential for personalized immunomodulatory therapies and genderspecific interventions .",
+    "keywords": [
+     "stroke severity",
+     "T-cell signaling",
+     "Weighted Gene",
+     "therapies genderspecific",
+     "subgroups distinct"
+    ],
+    "passages": [
+     5
+    ]
+   },
+   {
+    "id": "n7",
+    "label": "Per-Sample Standardization and Asymmetric Winsorization Lead to…",
+    "kind": "section",
+    "title": "7. “Per-Sample Standardization and Asymmetric Winsorization Lead to Accurate Clustering of RNA-Seq Expression Profiles” (Bioinformatics, 2021)",
+    "summary": "Risso and Pagnotta introduce Asymmetric Winsorization per-Sample Transformation (AWST) — a preprocessing technique improving clustering robustness for RNA-seq data.",
+    "keywords": [
+     "per-sample normalization",
+     "subjective gene",
+     "transformation awst",
+     "Pagnotta introduce",
+     "producing stable"
+    ],
+    "passages": [
+     6
+    ]
+   },
+   {
+    "id": "n8",
+    "label": "Unsupervised Analysis of Whole Transcriptome Data from…",
+    "kind": "section",
+    "title": "8. “Unsupervised Analysis of Whole Transcriptome Data from Human Pluripotent Stem Cells Cardiac Differentiation” (Scientific Reports, 2024)",
+    "summary": "This study used unsupervised machine learning (Hierarchical Clustering, K- Means, SOM) to analyze RNA-seq data from 2D and 3D cardiac differentiation of human pluripotent stem cells.",
+    "keywords": [
+     "stem cells",
+     "differentiation efficiency",
+     "markers cardiomyocyte",
+     "unsupervised machine",
+     "visualized global"
+    ],
+    "passages": [
+     7
+    ]
+   },
+   {
+    "id": "n9",
+    "label": "Comparison of Hierarchical Clustering and Neural Network…",
+    "kind": "section",
+    "title": "9. “Comparison of Hierarchical Clustering and Neural Network Clustering: An Analysis on Precision Dominance” (Scientific Reports, 2023)",
+    "summary": "This study compares Hierarchical Clustering (HC) and Neural Network Clustering (NNC) using Self-Organizing Maps (SOM) to classify Lahore’s 2020 water-quality data.",
+    "keywords": [
+     "water-quality data",
+     "nnc self-organizing",
+     "validated cophenetic",
+     "som classify",
+     "seven clusters"
+    ],
+    "passages": [
+     8
+    ]
+   },
+   {
+    "id": "n10",
+    "label": "DendroX: Multi-Level Multi-Cluster Selection in Dendrograms",
+    "kind": "section",
+    "title": "10. “DendroX: Multi-Level Multi-Cluster Selection in Dendrograms” (BMC Genomics, 2024)",
+    "summary": "introduce DendroX, an interactive web app for multi-level and multicluster dendrogram selection within cluster heatmaps.",
+    "keywords": [
+     "multicluster dendrogram",
+     "shared anticancer",
+     "meaningful clusters",
+     "LINCS L1000",
+     "compounds"
+    ],
+    "passages": [
+     9,
+     10
+    ]
+   },
+   {
+    "id": "n11",
+    "label": "Cell Type Hierarchy Reconstruction via Reconciliation of…",
+    "kind": "section",
+    "title": "11. “Cell Type Hierarchy Reconstruction via Reconciliation of Multi-Resolution Cluster Tree” (Nucleic Acids Research, 2021)",
+    "summary": "MRtree bridges flat and hierarchical clustering methods, enabling multi-level celltype discovery without manually selecting cluster resolution.",
+    "keywords": [
+     "multi-level celltype",
+     "tree scrna-seq",
+     "pancreas datasets",
+     "selecting cluster",
+     "revealed biologically"
+    ],
+    "passages": [
+     11
+    ]
+   },
+   {
+    "id": "n12",
+    "label": "A New and Effective Two-Step Clustering Approach…",
+    "kind": "section",
+    "title": "12. “A New and Effective Two-Step Clustering Approach for Single-Cell RNA Sequencing Data” (BMC Genomics, 2022)",
+    "summary": "propose TSC (Two-Step Clustering), which first clusters core cells using hierarchical clustering and then assigns non-core cells to the nearest clusters.",
+    "keywords": [
+     "single-cell datasets",
+     "nearest clusters",
+     "tsc two-step",
+     "non-core cells",
+     "tested real"
+    ],
+    "passages": [
+     12
+    ]
+   },
+   {
+    "id": "n13",
+    "label": "Boosting scRNA-Seq Data Clustering by Cluster-Aware Feature…",
+    "kind": "section",
+    "title": "13. “Boosting scRNA-Seq Data Clustering by Cluster-Aware Feature Weighting (CaFew)” (BMC Bioinformatics, 2021)",
+    "summary": "Li, Guan, and Zhou introduce CaFew, a cluster-aware feature weighting technique that selects genes with high intra-cluster variability to improve scRNA- seq clustering.",
+    "keywords": [
+     "seq clustering",
+     "selects genes",
+     "weights features",
+     "CaFew",
+     "variability improve"
+    ],
+    "passages": [
+     13
+    ]
+   },
+   {
+    "id": "n14",
+    "label": "A Novel Single-Cell RNA Sequencing Data Feature…",
+    "kind": "section",
+    "title": "14. “A Novel Single-Cell RNA Sequencing Data Feature Extraction Method Based on Gene Function Analysis and Its Applications in Glioma Study” (Frontiers in Oncology, 2021)",
+    "summary": "propose FEGFS, a functional gene-set–based feature extraction method for scRNA-seq data that leverages Gene Ontology (GO) terms.",
+    "keywords": [
+     "FEGFS",
+     "similarity reduction",
+     "marker genes",
+     "tumor heterogeneity",
+     "kernel PCA"
+    ],
+    "passages": [
+     14
+    ]
+   },
+   {
+    "id": "n15",
+    "label": "CDSKNNXMBD",
+    "kind": "section",
+    "title": "15. “CDSKNNXMBD: A Novel Clustering Framework for Large- Scale Single-Cell Data Based on a Stable Graph Structure” (Journal of Translational Medicine, 2024)",
+    "summary": "developed CDSKNNXMBD, a community-detection-based framework integrating KNN graph stability with partition clustering for large-scale scRNA- seq datasets.",
+    "keywords": [
+     "partition clustering",
+     "tools cdsknn",
+     "tissues balanced",
+     "seq datasets",
+     "reducing runtime"
+    ],
+    "passages": [
+     15
+    ]
+   },
+   {
+    "id": "n16",
+    "label": "Clustering Analysis for the Evolutionary Relationships of…",
+    "kind": "section",
+    "title": "16. “Clustering Analysis for the Evolutionary Relationships of SARS-CoV-2 Strains” (Scientific Reports, 2024)",
+    "summary": "employed hierarchical clustering on 4,551 SARS-CoV-2 genomic sequences from China (GISAID database) to study viral evolution.",
+    "keywords": [
+     "viral evolution",
+     "Jaccard linkage",
+     "ward euclidean",
+     "variant sources",
+     "strains immune"
+    ],
+    "passages": [
+     16
+    ]
+   },
+   {
+    "id": "n17",
+    "label": "The Transcriptomic Portrait of Locally Advanced Breast…",
+    "kind": "section",
+    "title": "17. “The Transcriptomic Portrait of Locally Advanced Breast Cancer in Latin American Patients” (Frontiers in Oncology, 2022)",
+    "summary": "This multicountry study analyzed 1,071 stage II–III breast cancer samples using PAM50 transcriptomic profiling.",
+    "keywords": [
+     "transcriptomic profiling",
+     "showed estrogen",
+     "samples pam50",
+     "luma immune",
+     "subtype distribution"
+    ],
+    "passages": [
+     17
+    ]
+   },
+   {
+    "id": "n18",
+    "label": "An Analysis of Different Distance-Linkage Methods for…",
+    "kind": "section",
+    "title": "18. “An Analysis of Different Distance-Linkage Methods for Clustering Gene Expression Data and Observing Pleiotropy” (JMIR Bioinformatics & Biotechnology, 2022)",
+    "summary": "Choudhury and Ashraf evaluated nine distance-linkage combinations (Euclidean, Manhattan, Maximum × Single, Complete, Average, Ward) for gene expression clustering.",
+    "keywords": [
+     "microarray data",
+     "maximum distance",
+     "linkage produced",
+     "pleiotropic genes",
+     "Ward"
+    ],
+    "passages": [
+     18
+    ]
+   },
+   {
+    "id": "n19",
+    "label": "Review of Single-Cell RNA-Seq Data Clustering for…",
+    "kind": "section",
+    "title": "19. “Review of Single-Cell RNA-Seq Data Clustering for Cell- Type Identification and Characterization” (RNA, 2023)",
+    "summary": "reviewed computational clustering methods for single-cell RNA-seq analysis.",
+    "keywords": [
+     "RNA-seq analysis",
+     "k-means hierarchical",
+     "rare heterogeneous",
+     "performance benchmark",
+     "normalization dimensionality"
+    ],
+    "passages": [
+     19
+    ]
+   },
+   {
+    "id": "n20",
+    "label": "A Novel Hierarchical Clustering Approach for Joint…",
+    "kind": "section",
+    "title": "20. “A Novel Hierarchical Clustering Approach for Joint Analysis of Multiple Phenotypes Uncovers Obesity Variants” (Frontiers in Genetics, 2022)",
+    "summary": "Tested on Atherosclerosis Risk in Communities (ARIC) data, HCDC improved statistical power and identified UQCC1-rs1570004 as a new obesity-associated variant.",
+    "keywords": [
+     "obesity-associated variant",
+     "HCDC",
+     "models enhances",
+     "multiple phenotypes",
+     "statistical power"
+    ],
+    "passages": [
+     20
+    ]
+   },
+   {
+    "id": "n21",
+    "label": "scBubbletree",
+    "kind": "section",
+    "title": "21. “scBubbletree: Computational Approach for Visualization of Single-Cell RNA-Seq Data” (BMC Bioinformatics, 2024)",
+    "summary": "present scBubbletree, a visualization tool that represents scRNA- seq clusters as “bubbles” in a dendrogram (bubble tree).",
+    "keywords": [
+     "visualization cluster",
+     "properties gene",
+     "scBubbletree",
+     "t-sne accuracy",
+     "tested datasets"
+    ],
+    "passages": [
+     21
+    ]
+   },
+   {
+    "id": "n22",
+    "label": "Clustering and Classification Methods for Single-Cell RNA-Sequencing…",
+    "kind": "section",
+    "title": "22. “Clustering and Classification Methods for Single-Cell RNA-Sequencing Data” (Briefings in Bioinformatics, 2020)",
+    "summary": "The paper highlights how hybrid and nonlinear approaches improve rare cell detection, suggesting integrated frameworks as the future for single-cell data analysis .",
+    "keywords": [
+     "single-cell data",
+     "scRNA-seq analysis",
+     "major clustering",
+     "metrics dimensionality",
+     "noisy data"
+    ],
+    "passages": [
+     22
+    ]
+   },
+   {
+    "id": "n23",
+    "label": "Data-Driven Discovery of Gene Expression Markers Distinguishing…",
+    "kind": "section",
+    "title": "23. “Data-Driven Discovery of Gene Expression Markers Distinguishing Pediatric Acute Lymphoblastic Leukemia Subtypes” (Molecular Oncology, 2025)",
+    "summary": "conducted a data-driven transcriptomic study on pediatric acute lymphoblastic leukemia (ALL) using TARGET RNA-seq data.",
+    "keywords": [
+     "TARGET RNA-seq",
+     "prognostic value",
+     "transcriptomic pediatric",
+     "understanding subtype",
+     "vpreb3 strong"
+    ],
+    "passages": [
+     23
+    ]
+   },
+   {
+    "id": "n24",
+    "label": "Automatic Dendrogram Slicing for Mixed-Type Data Clustering",
+    "kind": "section",
+    "title": "24. “Automatic Dendrogram Slicing for Mixed-Type Data Clustering” (Journal of Classification, 2025)",
+    "summary": "using Gower’s index and factor analysis of mixed data (FAMD), the approach enhances partition accuracy across multi-omics applications .",
+    "keywords": [
+     "partition accuracy",
+     "tests hierarchical",
+     "slicing mixed-type",
+     "index factor",
+     "interpretability datasets"
+    ],
+    "passages": [
+     24,
+     25
+    ]
+   },
+   {
+    "id": "n25",
+    "label": "Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC)",
+    "kind": "section",
+    "title": "25. “Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC)” (Quantitative Biology, 2025)",
+    "summary": "developed stIHC, a novel clustering method for spatial transcriptomics data, identifying spatial gene co-expression modules across tissues.",
+    "keywords": [
+     "spatial transcriptomics",
+     "stIHC groups",
+     "Unlike spot-based",
+     "spatial modules",
+     "visium merfish"
+    ],
+    "passages": [
+     26
+    ]
+   },
+   {
+    "id": "n26",
+    "label": "Consensus Clustering of Gene Expression Profiles in…",
+    "kind": "section",
+    "title": "26. “Consensus Clustering of Gene Expression Profiles in Peripheral Blood of Acute Ischemic Stroke Patients” (Frontiers in Neurology, 2022)",
+    "summary": "applied consensus clustering on peripheral blood RNA-seq from acute ischemic stroke (AIS) patients, identifying three molecular subgroups.",
+    "keywords": [
+     "stroke prognosis",
+     "rna-seq acute",
+     "gender-specific immune",
+     "risk proteasome",
+     "subgroups subgroup"
+    ],
+    "passages": [
+     27
+    ]
+   },
+   {
+    "id": "n27",
+    "label": "Transcriptome-Wide Gene Expression Outlier Analysis Pinpoints Therapeutic…",
+    "kind": "section",
+    "title": "27. “Transcriptome-Wide Gene Expression Outlier Analysis Pinpoints Therapeutic Vulnerabilities in Colorectal Cancer” (Molecular Oncology, 2024)",
+    "summary": "introduced an outlier-based transcriptomic workflow for 226 colorectal cancer (CRC) cell lines, identifying 3,533 overexpressed and 965 underexpressed genes.",
+    "keywords": [
+     "PRMT5-MTA inhibitor",
+     "transcriptomic data",
+     "introduced outlier-based",
+     "supports multi-omics",
+     "lines identifying"
+    ],
+    "passages": [
+     28
+    ]
+   },
+   {
+    "id": "n28",
+    "label": "Comprehensive RNA-Seq Gene Co-Expression Analysis Reveals Consistent…",
+    "kind": "section",
+    "title": "28. “Comprehensive RNA-Seq Gene Co-Expression Analysis Reveals Consistent Molecular Pathways in Hepatocellular Carcinoma across Diverse Risk Factors” (Biology, 2024)",
+    "summary": "performed co-expression network analysis on TCGA HCC datasets, revealing conserved modules across viral and non-viral etiologies.",
+    "keywords": [
+     "TCGA HCC",
+     "activated p53",
+     "viral non-viral",
+     "therapeutic targets",
+     "pi3k akt"
+    ],
+    "passages": [
+     29
+    ]
+   },
+   {
+    "id": "n29",
+    "label": "Unsupervised Multiscale Clustering of Single-Cell Transcriptomes to…",
+    "kind": "section",
+    "title": "29. “Unsupervised Multiscale Clustering of Single-Cell Transcriptomes to Identify Hierarchical Structures of Cell Subtypes” (GigaScience, 2025)",
+    "summary": "MSC builds sparse cell-cell networks using a locally embedded network (LEN) and applies top-down hierarchical splitting to reveal fine-grained subtypes.",
+    "keywords": [
+     "rare-cell detection",
+     "subtypes benchmarked",
+     "network len",
+     "unsupervised resolutionadaptive",
+     "MSC"
+    ],
+    "passages": [
+     30
+    ]
+   },
+   {
+    "id": "n30",
+    "label": "Multiscale Hierarchical Bayesian Clustering Improves Tumor Heterogeneity…",
+    "kind": "section",
+    "title": "30. “Multiscale Hierarchical Bayesian Clustering Improves Tumor Heterogeneity Analysis in Pan-Cancer Studies” (Bioinformatics, 2025)",
+    "summary": "present a hierarchical Bayesian model for clustering multi-omics cancer data, integrating gene expression, methylation, and mutation profiles.",
+    "keywords": [
+     "tumor subtype",
+     "mixture dirichlet",
+     "TCGA pancancer",
+     "prognostic relevance",
+     "profiles captures"
+    ],
+    "passages": [
+     31
+    ]
+   },
+   {
+    "id": "n31",
+    "label": "DeepGraphClust",
+    "kind": "section",
+    "title": "31. “DeepGraphClust: Graph Neural Network–Based Hierarchical Clustering for scRNA-Seq Data” (Nature Machine Intelligence, 2025)",
+    "summary": "propose DeepGraphClust, a graph neural network framework that learns hierarchical embeddings for single-cell transcriptomics.",
+    "keywords": [
+     "DeepGraphClust",
+     "transcriptomics combines",
+     "scalability benchmark",
+     "traditional clustering",
+     "liu propose"
+    ],
+    "passages": [
+     32,
+     33
+    ]
+   }
+  ]
+ },
+ "passages": [
+  {
+   "text": "Zou et al. present HGC, a Hierarchical Graph-based Clustering algorithm designed for large single-cell RNA-seq datasets. By constructing dendrograms on shared nearest-neighbor graphs, HGC achieves linear-time clustering and captures biological hierarchy with high accuracy. It enables multi-resolution exploration of cell types, outperforming classical hierarchical clustering in both speed and scalability .",
+   "page": 1
+  },
+  {
+   "text": "Grabski et al. introduced sc-SHC, a statistical framework integrating hypothesis testing into hierarchical clustering for scRNA-seq data. Unlike heuristic methods, it quantifies clustering uncertainty and controls for over-clustering. The method identifies truly distinct cell populations and corrects false discoveries. Applied to the Human Lung Cell Atlas and mouse cerebellum, it validated known cell types and detected statistically significant subpopulations .",
+   "page": 1
+  },
+  {
+   "text": "Lei et al. developed DeepScena, a self-supervised deep clustering tool for scRNA-seq data. Combining a negative binomial autoencoder, nonlinear dimensionality reduction, and self-supervision, it enhances accuracy in identifying rare cell populations. Benchmarking across large datasets, DeepScena outperformed seven popular tools and successfully detected subpopulations in multiple myeloma cells, improving resolution and reliability in cell-type discovery .",
+   "page": 1
+  },
+  {
+   "text": "Seth et al. proposed an integrated framework combining PCA-based dimensionality reduction and Louvain hierarchical clustering to analyze singlecell RNA sequencing (scRNA-seq) data. Applied to mouse intestinal cells, it identified 10 clusters and 3,871 biomarkers, including 1,892 frequent markers like Rps4x and Rpl13a. The model effectively detects cluster-specific biomarkers, demonstrating high modularity (0.885) and robustness for rare cell-type identification .",
+   "page": 2
+  },
+  {
+   "text": "This study analyzed 1,077 breast cancer transcriptomes using ssGSEA and clustering to profile tumor microenvironment (TME) immune infiltration. It identified 983 differentially expressed genes and constructed a TME score based on seven immune-related genes predictive of patient survival. Validated across multiple datasets, this TME score proved an independent prognostic biomarker, improving upon traditional TNM staging for breast cancer outcomes .",
+   "page": 2
+  },
+  {
+   "text": "Yang et al. applied consensus clustering on peripheral blood gene expression data from acute ischemic stroke (AIS) patients, identifying three molecular subgroups with distinct immune signatures . Each subgroup displayed unique gender-, age-, and pathway-specific features, including variations in proteasome activity, T-cell signaling, and inflammatory responses. Weighted Gene Co-expression Network Analysis (WGCNA) revealed eight functional gene modules linked to stroke severity and hemorrhagic transformation risk, suggesting potential for personalized immunomodulatory therapies and genderspecific interventions .",
+   "page": 2
+  },
+  {
+   "text": "Risso and Pagnotta introduce Asymmetric Winsorization per-Sample Transformation (AWST) — a preprocessing technique improving clustering robustness for RNA-seq data. AWST mitigates outliers by per-sample normalization and smoothing, avoiding subjective gene selection. It enhances clustering accuracy and biological interpretability across bulk and single-cell RNA-seq datasets, producing more stable and meaningful gene expression clusters .",
+   "page": 3
+  },
+  {
+   "text": "This study used unsupervised machine learning (Hierarchical Clustering, K- Means, SOM) to analyze RNA-seq data from 2D and 3D cardiac differentiation of human pluripotent stem cells. It revealed that 3D differentiation enhances cardiac commitment, and low differentiation efficiency correlates with early expression of non-mesodermal genes. The workflow effectively visualized global transcriptomic patterns and identified predictive markers for cardiomyocyte differentiation efficiency .",
+   "page": 3
+  },
+  {
+   "text": "This study compares Hierarchical Clustering (HC) and Neural Network Clustering (NNC) using Self-Organizing Maps (SOM) to classify Lahore’s 2020 water-quality data. HC produced seven clusters validated by a high cophenetic coefficient (0.9582), while NNC identified six correlated clusters and four outlier parameters among sixteen locations. The combined HC–NNC framework achieved superior clustering precision (~0.8), effectively integrating visual and computational insights for more accurate environmental data segmentation .",
+   "page": 3
+  },
+  {
+   "text": "Feng et al. introduce DendroX, an interactive web app for multi-level and multicluster dendrogram selection within cluster heatmaps. Designed using React and D3, it allows flexible visual and statistical analysis of complex data. Tested on",
+   "page": 3
+  },
+  {
+   "text": "LINCS L1000 gene-expression profiles of 297 bioactive compounds, DendroX identified 17 biologically meaningful clusters, including one of natural compounds with shared anticancer, antioxidant, and anti-inflammatory effects —demonstrating its value in uncovering hidden biological relationships .",
+   "page": 4
+  },
+  {
+   "text": "Peng et al. developed MRtree, an algorithm that reconciles flat clusterings across multiple resolutions to build a coherent hierarchical tree for scRNA-seq data. MRtree bridges flat and hierarchical clustering methods, enabling multi-level celltype discovery without manually selecting cluster resolution. Applied to brain and pancreas datasets, MRtree accurately reconstructed cell hierarchies and revealed biologically meaningful subtype relationships .",
+   "page": 4
+  },
+  {
+   "text": "Li et al. propose TSC (Two-Step Clustering), which first clusters core cells using hierarchical clustering and then assigns non-core cells to the nearest clusters. Tested on 12 real scRNA-seq datasets, TSC achieved higher accuracy and stability than state-of-the-art methods by effectively handling high-dimensionality, noise, and dropout events. The method enhances cell-type inference and scalability for large single-cell datasets .",
+   "page": 4
+  },
+  {
+   "text": "Li, Guan, and Zhou introduce CaFew, a cluster-aware feature weighting technique that selects genes with high intra-cluster variability to improve scRNA- seq clustering. By optimizing the clustering objective function, CaFew assigns importance weights to features, boosting accuracy when integrated with methods like SC3. Evaluations on eight real datasets show CaFew enhances clustering performance and visualization, outperforming traditional feature-selection methods .",
+   "page": 4
+  },
+  {
+   "text": "Zhuang et al. propose FEGFS, a functional gene-set–based feature extraction method for scRNA-seq data that leverages Gene Ontology (GO) terms. By applying kernel PCA and semantic similarity reduction, FEGFS improves clustering accuracy on six datasets and outperforms seven existing methods. Applied to glioma, it effectively identified key cell clusters and marker genes linked to tumor heterogeneity and progression .",
+   "page": 5
+  },
+  {
+   "text": "Ren et al. developed CDSKNNXMBD, a community-detection-based framework integrating KNN graph stability with partition clustering for large-scale scRNA- seq datasets. Tested on 15 human fetal tissues, it balanced clustering quality and speed, completing 1.46 million-cell clustering in 6.33 minutes, reducing runtime by up to 99% versus existing tools. CDSKNN excels in handling imbalanced data with superior robustness and scalability .",
+   "page": 5
+  },
+  {
+   "text": "Chen et al. employed hierarchical clustering on 4,551 SARS-CoV-2 genomic sequences from China (GISAID database) to study viral evolution. Using Ward– Euclidean and Ward–Jaccard linkage, they identified distinct clusters such as BF.28, BE.1.1.1, and BA.5.3, which show unique evolutionary features. The analysis highlights potential future variant sources and underscores the need for monitoring strains with high immune evasion and transmissibility .",
+   "page": 5
+  },
+  {
+   "text": "This multicountry study analyzed 1,071 stage II–III breast cancer samples using PAM50 transcriptomic profiling. The results revealed subtype distribution: LumA (42.6%), LumB (21.3%), HER2E (13.3%), Basal (16.6%). LumA had the best prognosis, while Basal had the worst. Pathway analysis showed estrogen dependency in LumA and immune activation in Basal subtypes. The study",
+   "page": 5
+  },
+  {
+   "text": "Choudhury and Ashraf evaluated nine distance-linkage combinations (Euclidean, Manhattan, Maximum × Single, Complete, Average, Ward) for gene expression clustering. Using microarray data, they found maximum distance + ward linkage produced the most accurate clusters. The study also identified pleiotropic genes linked to three different cancers through gene enrichment, emphasizing the importance of proper metric selection in biological clustering .",
+   "page": 6
+  },
+  {
+   "text": "Zhang et al. reviewed computational clustering methods for single-cell RNA-seq analysis. They classified approaches into k-means, hierarchical, graph/community detection, and density-based algorithms. The review highlights preprocessing steps—quality control, normalization, and dimensionality reduction—as essential for performance. Benchmark comparisons across datasets show that hybrid and graph-based methods achieve the best accuracy in identifying rare and heterogeneous cell types .",
+   "page": 6
+  },
+  {
+   "text": "Fu et al. developed HCDC (Hierarchical Clustering based on Correlation Differences of Phenotypes) to enhance GWAS by analyzing multiple phenotypes simultaneously. Tested on Atherosclerosis Risk in Communities (ARIC) data, HCDC improved statistical power and identified UQCC1-rs1570004 as a new obesity-associated variant. Simulations confirmed that embedding HCDC in existing models enhances detection of weak-effect genetic variants .",
+   "page": 6
+  },
+  {
+   "text": "Kitanovski et al. present scBubbletree, a visualization tool that represents scRNA- seq clusters as “bubbles” in a dendrogram (bubble tree). It avoids overplotting, preserves quantitative relationships, and integrates with Seurat in R. Tested on datasets exceeding 1.2 million cells, scBubbletree enables scalable, interpretable visualization of cluster properties and gene expression patterns, outperforming UMAP and t-SNE in accuracy and clarity .",
+   "page": 7
+  },
+  {
+   "text": "Qi et al. review major clustering and classification techniques for scRNA-seq analysis, including hierarchical, k-means, biclustering, and deep learning–based methods. They emphasize the importance of proper similarity metrics, dimensionality reduction, and integrated pipelines for handling high-dimensional noisy data. The paper highlights how hybrid and nonlinear approaches improve rare cell detection, suggesting integrated frameworks as the future for single-cell data analysis .",
+   "page": 7
+  },
+  {
+   "text": "Nourbakhsh et al. conducted a data-driven transcriptomic study on pediatric acute lymphoblastic leukemia (ALL) using TARGET RNA-seq data. They identified 14 expression markers differentiating B-ALL and T-ALL, such as CCN2, EBF1, and VPREB3, several with strong prognostic value. Their analysis revealed four expression subgroups, validated on an independent Danish cohort, enhancing understanding of ALL subtype heterogeneity and therapeutic stratification .",
+   "page": 7
+  },
+  {
+   "text": "Palazzo et al. propose an automatic dendrogram slicing method for mixed-type genomics data, integrating permutation-based tests with hierarchical clustering. The technique determines optimal clusters without manual thresholds, improving interpretability for datasets combining categorical and continuous features. By",
+   "page": 7
+  },
+  {
+   "text": "using Gower’s index and factor analysis of mixed data (FAMD), the approach enhances partition accuracy across multi-omics applications .",
+   "page": 8
+  },
+  {
+   "text": "Higgins et al. developed stIHC, a novel clustering method for spatial transcriptomics data, identifying spatial gene co-expression modules across tissues. Unlike spot-based clustering, stIHC groups genes with similar spatial expression patterns. Tested on 10x Visium and MERFISH data, it outperformed existing tools like SPARK and SpatialDE, revealing functionally coherent spatial modules confirmed via gene ontology enrichment .",
+   "page": 8
+  },
+  {
+   "text": "Yang et al. applied consensus clustering on peripheral blood RNA-seq from acute ischemic stroke (AIS) patients, identifying three molecular subgroups. Each subgroup exhibited distinct immune-related gene modules, linked to hemorrhagic transformation risk, proteasome activity, and gender-specific immune suppression. This stratification provides a basis for personalized immunomodulatory therapies and improving stroke prognosis .",
+   "page": 8
+  },
+  {
+   "text": "Mariella et al. introduced an outlier-based transcriptomic workflow for 226 colorectal cancer (CRC) cell lines, identifying 3,533 overexpressed and 965 underexpressed genes. By integrating genomic, epigenetic, and transcriptomic data, they linked gene expression abnormalities to drug sensitivities, including PRMT5-MTA inhibitor efficacy in MTAP-deficient cells. The framework supports multi-omics biomarker discovery in cancer therapy .",
+   "page": 8
+  },
+  {
+   "text": "Talubo et al. performed co-expression network analysis on TCGA HCC datasets, revealing conserved modules across viral and non-viral etiologies. Low-grade HCCs showed PI3K/Akt and metabolic pathways, while high-grade tumors activated p53 and adhesion-related genes. Shared modules for cell cycle and immune regulation suggest common therapeutic targets irrespective of etiology .",
+   "page": 9
+  },
+  {
+   "text": "Song et al. introduce Multiscale Clustering (MSC), an unsupervised, resolutionadaptive framework for scRNA-seq data. MSC builds sparse cell-cell networks using a locally embedded network (LEN) and applies top-down hierarchical splitting to reveal fine-grained subtypes. Benchmarked against real and simulated datasets, MSC outperforms standard methods in accuracy, scalability, and rare-cell detection .",
+   "page": 9
+  },
+  {
+   "text": "Zhao et al. present a hierarchical Bayesian model for clustering multi-omics cancer data, integrating gene expression, methylation, and mutation profiles. The approach captures tumor subtype hierarchies and inter-patient variability, outperforming Gaussian mixture and Dirichlet models. Applied to TCGA pancancer datasets, it identified novel molecular subtypes with significant prognostic relevance.",
+   "page": 9
+  },
+  {
+   "text": "Liu et al. propose DeepGraphClust, a graph neural network framework that learns hierarchical embeddings for single-cell transcriptomics. It combines autoencoder-based dimensionality reduction with graph convolution layers to improve cell-type identification. DeepGraphClust achieves superior accuracy",
+   "page": 9
+  },
+  {
+   "text": "and scalability across benchmark datasets, identifying rare immune and neuronal subtypes overlooked by traditional clustering methods.",
+   "page": 10
+  }
+ ],
+ "links": [],
+ "stats": {
+  "pages": 10,
+  "passages": 34,
+  "headings_detected": 31,
+  "running_lines_removed": 10,
+  "sections": 31,
+  "topics": 0,
+  "links": 0,
+  "mean_silhouette": null,
+  "embedder": "all-MiniLM-L6-v2",
+  "seconds": 10.76
+ }
+}

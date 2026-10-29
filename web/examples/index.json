@@ -1,0 +1,6 @@
+[
+  {"file": "brain-tumor-cnn.json", "name": "Brain tumour CNN paper", "source": "Khaliki & Başarslan, \"Brain tumor detection from images and comparison with transfer learning methods and 3-layer CNN\", Scientific Reports (2024), CC BY 4.0."},
+  {"file": "deep-q-learning.json", "name": "Deep Q-learning review", "source": "Course review paper on deep Q-learning for game agents."},
+  {"file": "clustering-review.json", "name": "Hierarchical clustering summaries", "source": "Summaries of 31 single-cell clustering papers (ML coursework)."},
+  {"file": "metaverse-poster.json", "name": "Industrial metaverse poster", "source": "Research poster by Mudit Sharma, Rudhransh Dayma and Sai Anirudh."}
+]
